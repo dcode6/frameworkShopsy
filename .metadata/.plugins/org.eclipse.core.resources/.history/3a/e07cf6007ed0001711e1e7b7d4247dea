@@ -1,0 +1,36 @@
+package com.org.dapps.frameworkOne;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import com.relevantcodes.extentreports.ExtentTest;
+
+import pages.contactUs;
+
+public class toTest extends baseTest{
+	
+	
+	WebDriver driver;
+	ExtentTest testLog;
+	contactUs conObj;
+	public toTest(WebDriver Driver, ExtentTest TestLog) {
+		super(Driver);
+		this.driver=Driver;
+		this.testLog=TestLog;
+		conObj = new contactUs(Driver, TestLog);
+		
+	}
+
+	
+	
+	@Test
+	void samplerun() {
+			conObj.funcOne().clickContactUs().setName("test").setemail("email@yopmail.com")
+			.setTel("123456790").setoption("Others").clickAndSubmit().verifyProcess();
+		
+	}
+	
+	
+
+}

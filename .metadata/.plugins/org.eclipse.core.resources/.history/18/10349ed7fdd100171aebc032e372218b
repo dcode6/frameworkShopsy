@@ -1,0 +1,27 @@
+package xlMethods;
+
+import java.io.File;
+import java.io.FileInputStream;
+
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+
+public class basicXLOperations {
+	
+	public boolean readExcel(String filePath, String fileName, String sheetName) {
+		boolean flag=false;
+		try {
+			File fileObject = new File(filePath+"\\"+fileName);
+			FileInputStream inputFileStream = new FileInputStream(fileObject);
+			Workbook workbookObject = null;
+			String fileExeType = fileName.substring(fileName.indexOf("."));
+			if(fileExeType.equals(".xlsx")) {
+				workbookObject=new HSSFWorkbook(inputFileStream);
+				
+
+			}
+			
+		}
+	}
+
+}

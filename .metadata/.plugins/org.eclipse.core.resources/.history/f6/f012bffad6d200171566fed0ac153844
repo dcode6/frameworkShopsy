@@ -1,0 +1,14 @@
+package com.org.dapps.shopsyFramework;
+
+import org.testng.annotations.Test;
+
+public class toTest extends baseTest{
+		
+	@Test
+	public void samplerun() {
+			homeObj.gotoBaseURL().setLanguage();
+	}
+	
+	
+
+}

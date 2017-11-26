@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="60166" started-at="2017-11-26T06:17:29Z" finished-at="2017-11-26T06:18:29Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="60166" started-at="2017-11-26T06:17:29Z" finished-at="2017-11-26T06:18:29Z">
+      <class name="com.org.dapps.frameworkOne.toTest">
+        <test-method status="PASS" signature="config()[pri:0, instance:com.org.dapps.frameworkOne.toTest@42d80b78]" name="config" is-config="true" duration-ms="769" started-at="2017-11-26T11:47:28Z" finished-at="2017-11-26T11:47:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config -->
+        <test-method status="PASS" signature="initialize()[pri:0, instance:com.org.dapps.frameworkOne.toTest@42d80b78]" name="initialize" is-config="true" duration-ms="28622" started-at="2017-11-26T11:47:29Z" finished-at="2017-11-26T11:47:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="FAIL" signature="samplerun()[pri:0, instance:com.org.dapps.frameworkOne.toTest@42d80b78]" name="samplerun" duration-ms="30921" started-at="2017-11-26T11:47:58Z" finished-at="2017-11-26T11:48:29Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:304)
+	at org.testng.Assert.assertEquals(Assert.java:314)
+	at pages.contactUs.setOption(contactUs.java:53)
+	at com.org.dapps.frameworkOne.toTest.samplerun(toTest.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- samplerun -->
+        <test-method status="PASS" signature="termination()[pri:0, instance:com.org.dapps.frameworkOne.toTest@42d80b78]" name="termination" is-config="true" duration-ms="532" started-at="2017-11-26T11:48:29Z" finished-at="2017-11-26T11:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- termination -->
+        <test-method status="PASS" signature="finish()[pri:0, instance:com.org.dapps.frameworkOne.toTest@42d80b78]" name="finish" is-config="true" duration-ms="1227" started-at="2017-11-26T11:48:30Z" finished-at="2017-11-26T11:48:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+      </class> <!-- com.org.dapps.frameworkOne.toTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

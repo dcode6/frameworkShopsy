@@ -1,0 +1,30 @@
+package com.org.dapps.frameworkOne;
+
+import org.testng.annotations.Test;
+
+public class toTest extends baseTest{
+	
+//	
+//	WebDriver driver;
+//	ExtentTest testLog;
+//	contactUs conObj;
+//	public toTest(WebDriver Driver, ExtentTest TestLog) {
+//		super(Driver);
+//		this.driver=Driver;
+//		this.testLog=TestLog;
+//	}
+
+	
+	
+	@Test
+	public void samplerun() {
+			homeObj.gotoBaseURL().scroll("window.scrollBy(0,document.body.scrollHeight)");
+
+			homeObj.clickContactUs().setName("test").setEmail("email@yopmail.com")
+			.setTel("123456790").setOption("Others").clickAndSubmit().verifyProcess();
+		
+	}
+	
+	
+
+}

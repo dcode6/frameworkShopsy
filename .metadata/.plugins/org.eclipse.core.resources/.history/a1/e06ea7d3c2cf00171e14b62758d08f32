@@ -1,0 +1,36 @@
+package com.org.dapps.frameworkOne;
+
+import static org.testng.Assert.assertEquals;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import com.relevantcodes.extentreports.ExtentTest;
+
+import pages.contactUs;
+import pages.homePage;
+
+public class toTest extends baseTest{
+	
+	/*WebDriver driver;
+	ExtentTest testLog;
+*/
+	/*public toTest(WebDriver Driver, ExtentTest TestLog) {
+		super(Driver);
+		this.driver=Driver;
+		this.testLog=TestLog;
+	}
+	*/
+	
+	
+	@Test
+	void samplerun() {
+			Assert.assertEquals(0, 0);
+
+		
+	}
+	
+	
+
+}

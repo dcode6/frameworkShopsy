@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<parameter name="BaseUrl" value="https://www.google.com/intl/en_in/gmail/about/"></parameter>
+<parameter name="BaseTitle" value="Gmail - Free Storage and Email from Google"></parameter>
+  <test name="Test">
+  <parameter name="startElementXpathLocator" value="//*[text()='Sign In']"></parameter>
+  <classes>
+  <class name="BasePage">
+  </class>
+  <class name="SubPageOne"></class>
+  </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

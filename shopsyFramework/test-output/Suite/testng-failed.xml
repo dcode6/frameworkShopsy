@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="Browser" value="firefox"/>
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.org.dapps.shopsyFramework.toTest">
+        <methods>
+          <include name="termination"/>
+          <include name="config"/>
+          <include name="samplerun"/>
+          <include name="finish"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- com.org.dapps.shopsyFramework.toTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

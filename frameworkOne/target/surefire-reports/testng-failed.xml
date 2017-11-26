@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [com.org.dapps.frameworkOne.toTest]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="com.org.dapps.frameworkOne.toTest">
+        <methods>
+          <include name="samplerun"/>
+          <include name="config"/>
+          <include name="finish"/>
+          <include name="initialize"/>
+          <include name="termination"/>
+        </methods>
+      </class> <!-- com.org.dapps.frameworkOne.toTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [com.org.dapps.frameworkOne.toTest] -->

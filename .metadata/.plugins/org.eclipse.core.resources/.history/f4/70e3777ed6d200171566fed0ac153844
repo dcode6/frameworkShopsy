@@ -1,0 +1,47 @@
+package pages;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
+
+import com.org.dapps.shopsyFramework.basePage;
+import com.relevantcodes.extentreports.ExtentTest;
+
+public class homePage extends basePage{
+	
+	WebDriver driver;
+	ExtentTest testLog;
+	
+	@FindBy(xpath="//*[@id='content_geo']//input[@value='okay']")
+	WebElement langOkay;
+//	@FindBy(xpath="//*[@id='currency_href' and text()=' USD']")
+//	WebElement currencyButton;
+	
+	
+
+	public homePage(WebDriver Driver, ExtentTest TestLog) {
+		super(Driver,TestLog);
+		this.driver=Driver;
+		this.testLog=TestLog;
+		PageFactory.initElements(Driver, this);
+	}
+	
+	public homePage gotoBaseURL() {
+		Assert.assertEquals(VerifyURl("http://quickiz.com/shopsy-v2.2/", "Shopsy V2"), true);
+		return new homePage(driver, testLog);
+		
+	}
+	
+	public homePage setLanguage() {
+		Assert.assertEquals(elementClick(langOkay), true);
+		IdleWait("5");
+		return new homePage(driver,testLog);
+		
+	}
+	
+	
+	
+
+}

@@ -1,0 +1,30 @@
+package stepOne;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class zoplayTest {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.gecko.driver", "./Drivers/geckodriver.exe");
+		System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE, "true");
+//		System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, "dev/null");
+
+		WebDriver driver = new FirefoxDriver();
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		driver.manage().deleteAllCookies();
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		driver.navigate().refresh();
+		
+		driver.get("https://www.zoplay.com/contact/");
+		
+		Thread.sleep(15000);
+		
+driver.close();
+
+	}
+
+}

@@ -1,0 +1,9 @@
+package com.org.dapps.frameworkOne;
+
+public class basePage {
+
+	public basePage() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

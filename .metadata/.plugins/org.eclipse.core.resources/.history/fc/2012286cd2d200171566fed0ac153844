@@ -1,0 +1,26 @@
+package com.org.dapps.shopsyFramework;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+	
+
+    public static void main( String[] args )
+    {
+    	System.setProperty("webdriver.firefox.marionette", "./Drivers/geckodriver.exe");
+		System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE, "true");
+		System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, "/dev/null");
+		WebDriver driver = new FirefoxDriver();
+		driver.get("http://quickiz.com/shopsy-v2.2/");
+		
+	}		
+
+    	
+    }
+}

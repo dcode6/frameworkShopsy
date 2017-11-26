@@ -1,0 +1,47 @@
+package pages;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
+
+import com.org.dapps.frameworkOne.basePage;
+import com.relevantcodes.extentreports.ExtentTest;
+
+public class homePage extends basePage {
+	WebDriver driver;
+	ExtentTest testLog;
+	
+	
+	@FindBy(xpath="//*[@id='menu-company-information']//a[text()='Contact Us']")
+	WebElement cont;
+
+	public homePage(WebDriver Driver, ExtentTest TestLog) {
+		super(Driver,TestLog);
+		this.driver=Driver;
+		this.testLog=TestLog;
+		PageFactory.initElements(Driver, this);
+		
+	}
+	
+	public homePage gotoBaseURL() {
+		Assert.assertEquals(VerifyURl("https://www.zoplay.com", "Best Clone Scripts, Clone Script Softwares - Zoplay"), true);
+		PageFactory.initElements(driver, this);
+		return new homePage(driver, testLog);
+		
+	}
+	
+	public contactUs clickContactUs() {
+		Assert.assertEquals(elementClick(cont), true);
+		return new contactUs(driver,testLog);
+	}
+	
+	
+	
+	
+	
+		
+	
+
+}

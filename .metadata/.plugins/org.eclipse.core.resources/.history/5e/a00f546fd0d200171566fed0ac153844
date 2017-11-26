@@ -1,0 +1,28 @@
+package com.org.dapps.shopsyFramework;
+
+import org.testng.annotations.Test;
+
+public class toTest extends baseTest{
+	
+//	
+//	WebDriver driver;
+//	ExtentTest testLog;
+//	contactUs conObj;
+//	public toTest(WebDriver Driver, ExtentTest TestLog) {
+//		super(Driver);
+//		this.driver=Driver;
+//		this.testLog=TestLog;
+//	}
+
+	
+	
+	@Test
+	public void samplerun() {
+			homeObj.gotoBaseURL().setLanguage();
+
+		
+	}
+	
+	
+
+}

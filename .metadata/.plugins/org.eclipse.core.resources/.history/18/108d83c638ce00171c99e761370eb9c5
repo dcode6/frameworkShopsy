@@ -1,0 +1,18 @@
+package com.org.dapps.frameworkOne;
+
+import org.openqa.selenium.WebDriver;
+
+import com.relevantcodes.extentreports.ExtentTest;
+
+public class toTest extends baseTest{
+	
+	WebDriver driver;
+	ExtentTest testLog;
+
+	public toTest(WebDriver Driver, ExtentTest TestLog) {
+		
+		this.driver=Driver;
+		this.testLog=TestLog;
+	}
+
+}

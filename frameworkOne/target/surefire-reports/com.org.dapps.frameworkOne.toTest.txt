@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: com.org.dapps.frameworkOne.toTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 63.168 sec <<< FAILURE!
+samplerun(com.org.dapps.frameworkOne.toTest)  Time elapsed: 32.774 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:304)
+	at org.testng.Assert.assertEquals(Assert.java:314)
+	at pages.contactUs.setOption(contactUs.java:53)
+	at com.org.dapps.frameworkOne.toTest.samplerun(toTest.java:24)
+

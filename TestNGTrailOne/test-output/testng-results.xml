@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="8616" started-at="2017-10-28T17:57:16Z" finished-at="2017-10-28T17:57:25Z">
+    <groups>
+      <group name="a">
+        <method signature="NewTest.searchFind(java.lang.String, java.lang.String)[pri:0, instance:tNGCheck.NewTest@51efea79]" name="searchFind" class="tNGCheck.NewTest"/>
+      </group> <!-- a -->
+    </groups>
+    <test name="Default test" duration-ms="8616" started-at="2017-10-28T17:57:16Z" finished-at="2017-10-28T17:57:25Z">
+      <class name="tNGCheck.NewTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:tNGCheck.NewTest@51efea79]" name="beforeTest" is-config="true" duration-ms="8218" started-at="2017-10-28T23:27:16Z" finished-at="2017-10-28T23:27:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="FAIL" signature="searchFind(java.lang.String, java.lang.String)[pri:0, instance:tNGCheck.NewTest@51efea79]" name="searchFind" duration-ms="0" started-at="2017-10-28T23:27:25Z" data-provider="searchData" finished-at="2017-10-28T23:27:25Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Data Provider public java.lang.Object[][] tNGCheck.NewTest.getDataFromDataprocider(org.testng.ITestContext) must return either Object[][] or Object[] or Iterator<Object[]> or Iterator<Object>, not class [[Ljava.lang.Object;]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Data Provider public java.lang.Object[][] tNGCheck.NewTest.getDataFromDataprocider(org.testng.ITestContext) must return either Object[][] or Object[] or Iterator<Object[]> or Iterator<Object>, not class [[Ljava.lang.Object;
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:137)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:612)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1316)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1044)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1134)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:776)
+	at org.testng.TestRunner.run(TestRunner.java:634)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:425)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:420)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:385)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:334)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1318)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1243)
+	at org.testng.TestNG.runSuites(TestNG.java:1161)
+	at org.testng.TestNG.run(TestNG.java:1129)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchFind -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:tNGCheck.NewTest@51efea79]" name="afterTest" is-config="true" duration-ms="339" started-at="2017-10-28T23:27:25Z" finished-at="2017-10-28T23:27:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- tNGCheck.NewTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

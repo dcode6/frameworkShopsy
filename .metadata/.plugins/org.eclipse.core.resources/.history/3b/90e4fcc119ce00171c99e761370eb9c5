@@ -1,0 +1,15 @@
+package com.org.dapps.frameworkOne;
+
+import org.openqa.selenium.WebDriver;
+
+public class baseTest {
+	
+	WebDriver driver;
+
+	public baseTest() {
+		// TODO Auto-generated constructor stub
+		super(driver);
+		
+	}
+
+}

@@ -1,0 +1,56 @@
+package pages;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
+
+import com.org.dapps.frameworkOne.basePage;
+import com.relevantcodes.extentreports.ExtentTest;
+
+public class contactUs extends basePage{
+	
+	WebDriver driver;
+	ExtentTest testLog;
+	
+	@FindBy(xpath="//*[@id='your_name']")
+	WebElement name;
+	@FindBy(xpath="//*[@id='your_email']")
+	WebElement email;
+	@FindBy(xpath="//*[@id='demo']")
+	WebElement tel;
+	@FindBy(xpath="//*[@id='products']")
+	WebElement dropDown;
+	@FindBy(xpath="//*[@id='submit-form']")
+	WebElement submitButton;
+	
+
+	public contactUs(WebDriver Driver, ExtentTest TestLog) {
+		super(Driver,TestLog);
+		this.driver=Driver;
+		this.testLog=TestLog;
+		PageFactory.initElements(Driver, this);
+	}
+	
+	public contactUs setName(String name) {
+		Assert.assertEquals(clickAndType(element, name), true);
+		return new contactUs(driver, testLog);
+	}
+	
+	public contactUs setemail(String email) {
+		return new contactUs(driver, testLog);
+	}
+	
+	public contactUs setTel(String number) {
+		return new contactUs(driver, testLog);
+	}
+	
+	public contactUs setoption(String Data) {
+		return new contactUs(driver, testLog);
+	}
+	
+	
+	
+
+}

@@ -1,0 +1,9 @@
+package pages;
+
+public class contactUs {
+
+	public contactUs() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

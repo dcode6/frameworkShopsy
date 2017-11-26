@@ -1,0 +1,9 @@
+package com.org.dapps.frameworkOne;
+
+public class toTest {
+
+	public toTest() extends {
+		// TODO Auto-generated constructor stub
+	}
+
+}

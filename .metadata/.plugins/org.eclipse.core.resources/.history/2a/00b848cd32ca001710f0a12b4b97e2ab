@@ -1,0 +1,10 @@
+package xmlTest.pack.one;
+
+public class xmltrialOne {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

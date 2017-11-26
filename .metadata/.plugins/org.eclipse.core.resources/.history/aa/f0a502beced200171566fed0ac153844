@@ -1,0 +1,22 @@
+package pages;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
+
+import com.org.dapps.shopsyFramework.basePage;
+import com.relevantcodes.extentreports.ExtentTest;
+
+public class homePage extends basePage{
+	
+	WebDriver driver;
+	ExtentTest testLog;
+	
+
+	public homePage(WebDriver Driver, ExtentTest TestLog) {
+		super(Driver,TestLog);
+		this.driver=Driver;
+		this.testLog=TestLog;
+		PageFactory.initElements(Driver, this);
+	}
+
+}
