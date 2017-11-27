@@ -13,11 +13,13 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 
+import pages.homeAfterLogin;
 import pages.homePage;
 
 public class baseTest{
@@ -26,6 +28,7 @@ public class baseTest{
 	ExtentReports report;
 	ExtentTest testLog;
 	homePage homeObj;
+	homeAfterLogin homeAfterLoginObj;
 		
 	@BeforeSuite
 	public void config(){
@@ -35,7 +38,7 @@ public class baseTest{
 	
 	@BeforeTest
 	@Parameters("Browser")
-	public void initialize(String Browser)throws Exception{
+	public void initialize(@Optional("firefox") String Browser)throws Exception{
 		if(Browser.equalsIgnoreCase("firefox")){
 		System.setProperty("webdriver.gecko.driver", "./Drivers/geckodriver.exe");
 		System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE, "true");

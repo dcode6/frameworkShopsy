@@ -174,6 +174,18 @@ public class basePage {
 			}
 		return flag;
 		}
+	
+	public String userNameGenx() {
+		SimpleDateFormat Dateformat = new SimpleDateFormat("yyMMddhhmmss");
+		Date dateObj = new Date();
+		String datetext = Dateformat.format(dateObj);
+		return datetext;
+	}
+	
+	public String email(String Data) {
+		String email = Data+"yopmail.com";
+		return email;
+	}
 			
 		
 	}

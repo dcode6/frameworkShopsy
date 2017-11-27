@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 1, Errors: 0, Skipped: 3, Time elapsed: 1.777 sec <<< FAILURE!
-initialize(com.org.dapps.shopsyFramework.toTest)  Time elapsed: 0.897 sec  <<< FAILURE!
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 3, Time elapsed: 3.557 sec <<< FAILURE!
+initialize(com.org.dapps.shopsyFramework.toTest)  Time elapsed: 2.641 sec  <<< FAILURE!
 org.testng.TestNGException: 
 Parameter 'Browser' is required by BeforeTest on method initialize but has not been marked @Optional or defined
 

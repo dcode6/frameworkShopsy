@@ -6,10 +6,13 @@ public class toTest extends baseTest{
 		
 	@Test
 	public void samplerun() {
+		    String username = homeObj.userNameGenx();
 			homeObj.gotoBaseURL().setLanguage();
 			homeObj.clickRegister();
-			homeObj.popupCheck().setFirstName("testsqa").setPassword("last").setEmail("dd1@yopamil.com").setUsername("seleniumtest")
-			.setPassword("1234456").setPasswordConfirm("123456").setLastName("wert").clickSubmit();
+			homeObj.popupCheck().setFirstName(username).setLastName(username).setEmail(homeObj.email(username)).setPassword("123456")
+			.setPasswordConfirm("123456").clickSubmit().verifyLogin();
+			
+			
 			
 	}
 	

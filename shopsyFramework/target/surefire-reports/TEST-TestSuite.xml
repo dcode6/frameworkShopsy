@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="5" failures="1" name="TestSuite" time="5.222" errors="0" skipped="3">
+<testsuite tests="5" failures="1" name="TestSuite" time="14.151" errors="0" skipped="3">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_121\jre\bin"/>
@@ -27,9 +27,9 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\Devakumar M\newTrialO2\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf2814435160961018662.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\Devakumar M\newTrialO2\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf4813928137082148033.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_121\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_151/bin/server;C:/Program Files/Java/jre1.8.0_151/bin;C:/Program Files/Java/jre1.8.0_151/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;%M2%;C:\Users\Devakumar M\AppData\Local\Microsoft\WindowsApps;;D:\sw\eclipse;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_121\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_151/bin/server;C:/Program Files/Java/jre1.8.0_151/bin;C:/Program Files/Java/jre1.8.0_151/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Maven\apache-maven-3.5.2\apache-maven\src\bin;C:\Users\Devakumar M\AppData\Local\Microsoft\WindowsApps;;D:\sw\eclipse;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -61,7 +61,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.org.dapps.shopsyFramework.toTest" name="initialize" time="0.897">
+  <testcase classname="com.org.dapps.shopsyFramework.toTest" name="initialize" time="2.641">
     <failure message="
 Parameter &apos;Browser&apos; is required by BeforeTest on method initialize but has not been marked @Optional or defined
 " type="org.testng.TestNGException">org.testng.TestNGException: 
@@ -101,14 +101,14 @@ Parameter &apos;Browser&apos; is required by BeforeTest on method initialize but
     <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@59f95c5d
 </system-out>
   </testcase>
-  <testcase classname="com.org.dapps.shopsyFramework.toTest" name="samplerun" time="0.914">
+  <testcase classname="com.org.dapps.shopsyFramework.toTest" name="samplerun" time="2.664">
     <skipped/>
   </testcase>
-  <testcase classname="com.org.dapps.shopsyFramework.toTest" name="termination" time="0.916">
+  <testcase classname="com.org.dapps.shopsyFramework.toTest" name="termination" time="2.665">
     <skipped/>
   </testcase>
-  <testcase classname="com.org.dapps.shopsyFramework.toTest" name="finish" time="0.996">
+  <testcase classname="com.org.dapps.shopsyFramework.toTest" name="finish" time="2.895">
     <skipped/>
   </testcase>
-  <testcase classname="com.org.dapps.shopsyFramework.AppTest" name="testApp on testApp(com.org.dapps.shopsyFramework.AppTest)" time="1.499"/>
+  <testcase classname="com.org.dapps.shopsyFramework.AppTest" name="testApp on testApp(com.org.dapps.shopsyFramework.AppTest)" time="3.286"/>
 </testsuite>

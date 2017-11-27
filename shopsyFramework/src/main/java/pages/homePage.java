@@ -91,9 +91,9 @@ public class homePage extends basePage{
 		return new homePage(driver,testLog);			
 	}
 	
-	public homePage clickSubmit(){
+	public homeAfterLogin clickSubmit(){
 		Assert.assertEquals(elementClick(submitButton), true);
-		return new homePage(driver, testLog);
+		return new homeAfterLogin(driver, testLog);
 	}
 	
 	public homePage popupCheck() {
