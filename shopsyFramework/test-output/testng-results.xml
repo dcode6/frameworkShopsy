@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="42215" started-at="2017-11-27T17:45:55Z" finished-at="2017-11-27T17:46:37Z">
+  <suite name="Suite" duration-ms="46769" started-at="2017-11-27T19:14:24Z" finished-at="2017-11-27T19:15:11Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="42215" started-at="2017-11-27T17:45:55Z" finished-at="2017-11-27T17:46:37Z">
+    <test name="Test" duration-ms="46769" started-at="2017-11-27T19:14:24Z" finished-at="2017-11-27T19:15:11Z">
       <class name="com.org.dapps.shopsyFramework.toTest">
-        <test-method status="PASS" signature="config()[pri:0, instance:com.org.dapps.shopsyFramework.toTest@5c3bd550]" name="config" is-config="true" duration-ms="490" started-at="2017-11-27T23:15:54Z" finished-at="2017-11-27T23:15:55Z">
+        <test-method status="PASS" signature="config()[pri:0, instance:com.org.dapps.shopsyFramework.toTest@5c3bd550]" name="config" is-config="true" duration-ms="374" started-at="2017-11-28T00:44:24Z" finished-at="2017-11-28T00:44:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- config -->
-        <test-method status="PASS" signature="initialize(java.lang.String)[pri:0, instance:com.org.dapps.shopsyFramework.toTest@5c3bd550]" name="initialize" is-config="true" duration-ms="23992" started-at="2017-11-27T23:15:55Z" finished-at="2017-11-27T23:16:19Z">
+        <test-method status="PASS" signature="initialize(java.lang.String)[pri:0, instance:com.org.dapps.shopsyFramework.toTest@5c3bd550]" name="initialize" is-config="true" duration-ms="14027" started-at="2017-11-28T00:44:24Z" finished-at="2017-11-28T00:44:38Z">
           <params>
             <param index="0">
               <value>
@@ -22,15 +22,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="samplerun()[pri:0, instance:com.org.dapps.shopsyFramework.toTest@5c3bd550]" name="samplerun" duration-ms="17454" started-at="2017-11-27T23:16:19Z" finished-at="2017-11-27T23:16:36Z">
+        <test-method status="PASS" signature="samplerun()[pri:0, instance:com.org.dapps.shopsyFramework.toTest@5c3bd550]" name="samplerun" duration-ms="32144" started-at="2017-11-28T00:44:38Z" finished-at="2017-11-28T00:45:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- samplerun -->
-        <test-method status="PASS" signature="termination()[pri:0, instance:com.org.dapps.shopsyFramework.toTest@5c3bd550]" name="termination" is-config="true" duration-ms="691" started-at="2017-11-27T23:16:36Z" finished-at="2017-11-27T23:16:37Z">
+        <test-method status="PASS" signature="termination()[pri:0, instance:com.org.dapps.shopsyFramework.toTest@5c3bd550]" name="termination" is-config="true" duration-ms="572" started-at="2017-11-28T00:45:10Z" finished-at="2017-11-28T00:45:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- termination -->
-        <test-method status="PASS" signature="finish()[pri:0, instance:com.org.dapps.shopsyFramework.toTest@5c3bd550]" name="finish" is-config="true" duration-ms="891" started-at="2017-11-27T23:16:37Z" finished-at="2017-11-27T23:16:38Z">
+        <test-method status="PASS" signature="finish()[pri:0, instance:com.org.dapps.shopsyFramework.toTest@5c3bd550]" name="finish" is-config="true" duration-ms="999" started-at="2017-11-28T00:45:11Z" finished-at="2017-11-28T00:45:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finish -->

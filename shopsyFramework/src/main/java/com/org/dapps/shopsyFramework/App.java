@@ -27,6 +27,7 @@ public class App
 		driver.get("http://quickiz.com/shopsy-v2.2/");
 		WebElement langOkay = wait4.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='content_geo']//input[@value='okay']")));
 		langOkay.click();
+		System.out.println(langOkay.getText());
 //		WebElement currencyButton = wait4.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("[@id='currency_href' and text()=' USD']")));
 //		System.out.println(currencyButton.getText());
 		

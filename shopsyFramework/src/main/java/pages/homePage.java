@@ -40,6 +40,7 @@ public class homePage extends basePage{
 	
 	
 	
+	
 
 	public homePage(WebDriver Driver, ExtentTest TestLog) {
 		super(Driver,TestLog);
@@ -64,6 +65,13 @@ public class homePage extends basePage{
 		return new homePage(driver, testLog);
 		
 	}
+	
+	public homePage popupCheck() {
+		Assert.assertEquals(elementVisiblity(signupPOPUP), true);
+		return new homePage(driver, testLog);
+		
+	}
+	
 	public homePage setFirstName(String Data) {
 		Assert.assertEquals(clickAndType(firstName, Data), true);
 		return new homePage(driver,testLog);			
@@ -96,11 +104,4 @@ public class homePage extends basePage{
 		return new homeAfterLogin(driver, testLog);
 	}
 	
-	public homePage popupCheck() {
-		Assert.assertEquals(elementVisiblity(signupPOPUP), true);
-		return new homePage(driver, testLog);
-		
-	}
-	
-
 }

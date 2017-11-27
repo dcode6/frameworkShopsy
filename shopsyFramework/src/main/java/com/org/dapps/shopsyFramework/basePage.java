@@ -43,7 +43,7 @@ public class basePage {
 		try {
 			wait4.until(ExpectedConditions.visibilityOf(element));
 			flag=true;
-			testLog.log(LogStatus.PASS, "Element is visible");
+			testLog.log(LogStatus.PASS, "Element is visible"+element.toString());
 		}
 		catch (Exception e) {
 			testLog.log(LogStatus.FAIL, "Elementis not visible");
@@ -59,7 +59,7 @@ public class basePage {
 			flag=true;
 			act.moveToElement(element).build().perform();
 			element.click();
-			testLog.log(LogStatus.PASS, "Element is clicked");
+			testLog.log(LogStatus.PASS, "Element is clicked"+element.toString());
 		}
 		return flag;
 	}
@@ -70,7 +70,7 @@ public class basePage {
 			element.clear();
 			element.sendKeys(Data);
 			flag = true;
-			testLog.log(LogStatus.PASS, Data + "Data snt to element");
+			testLog.log(LogStatus.PASS, Data + "Data snt to element"+element.toString());
 		}
 		return flag;	
 	}
@@ -78,6 +78,7 @@ public class basePage {
 	public void IdleWait(String TimeInSeconds)	{
 		try {
 			Thread.sleep(1000*Integer.parseUnsignedInt(TimeInSeconds));
+			testLog.log(LogStatus.INFO, "idle wait for"+Integer.parseUnsignedInt(TimeInSeconds));
 		}
 		catch (Exception e) {
 			testLog.log(LogStatus.ERROR, e);
@@ -94,7 +95,7 @@ public class basePage {
 				    "return performance.timing.loadEventEnd - performance.timing.navigationStart;");
 			testLog.log(LogStatus.INFO," page loaded in "+loadtime+" millisecond");
 				if(Title.equalsIgnoreCase(Title)) {
-					testLog.log(LogStatus.INFO, "page looded successfully");
+					testLog.log(LogStatus.INFO, "page looded successfully"+URL+"title"+Title);
 					flag = true;
 				}
 		}
@@ -111,7 +112,7 @@ public class basePage {
 			if(elementVisiblity(element)) {
 				
 				Select option = new Select(element);
-				option.deselectByVisibleText(Data);
+				option.selectByVisibleText(Data);
 				flag=true;
 				testLog.log(LogStatus.PASS, Data+" selected from the drop down");
 			}
@@ -183,7 +184,7 @@ public class basePage {
 	}
 	
 	public String email(String Data) {
-		String email = Data+"yopmail.com";
+		String email = Data+"@yopmail.com";
 		return email;
 	}
 			

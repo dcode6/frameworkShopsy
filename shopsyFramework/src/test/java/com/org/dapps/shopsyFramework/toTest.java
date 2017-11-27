@@ -9,8 +9,8 @@ public class toTest extends baseTest{
 		    String username = homeObj.userNameGenx();
 			homeObj.gotoBaseURL().setLanguage();
 			homeObj.clickRegister();
-			homeObj.popupCheck().setFirstName(username).setLastName(username).setEmail(homeObj.email(username)).setPassword("123456")
-			.setPasswordConfirm("123456").clickSubmit().verifyLogin();
+			homeObj.popupCheck().setFirstName("test").setLastName("test").setEmail(homeObj.email(username)).setPassword("123456")
+			.setPasswordConfirm("123456").setUsername(username).clickSubmit().verifyLogin();
 			
 			
 			
